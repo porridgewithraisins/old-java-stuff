@@ -1,3 +1,8 @@
+//IF YOU ARE WONDERING ABOUT THE TERRIBLE FORMATTING
+// This file has the distinction of being the only thing i've coded on a phone. 
+// Don't remember why I did it, but it is what it is
+
+
 package magicsquare;
 import java.util.Scanner;
 public class MagicSquare {
