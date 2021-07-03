@@ -409,7 +409,8 @@ public class Minesweeper extends JFrame implements ActionListener, MouseListener
             }
         }
     }
-
+    
+    //if i don't put these some weird error happens
     @Override
     public void mousePressed(MouseEvent me) {
      // Do nothing
