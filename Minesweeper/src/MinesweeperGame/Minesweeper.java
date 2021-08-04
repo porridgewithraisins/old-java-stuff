@@ -281,10 +281,6 @@ public class Minesweeper extends JFrame implements ActionListener, MouseListener
      * The above is done recursively.
      * @param toClear the ArrayList which is passed to the function with positions in array
      *                that are zero, and are subsequently clicked.
-     * I'll explain this easy only. Ill call once you have this
-     * Arrays have definite pre-defined size and cannot have variable length.
-     * Array Lists on the other hand, which we use here can be edited and be of variable length
-     * So we are using it here.
      */
     
     public void dominoEffect(ArrayList<Integer> toClear){
@@ -293,7 +289,8 @@ public class Minesweeper extends JFrame implements ActionListener, MouseListener
         
         int x = toClear.get(0) / 100;       //getting x pos.
         int y = toClear.get(0) % 100;       //getting y pos.
-        toClear.remove(0);                  //remove that element from array to prevent infinite recursion.    
+        toClear.remove(0);                  //remove that element from queue to prevent infinite recursion.
+        
             if(counts[x][y] == 0)
             {                               //similar to neighbor counts, each surrounding cell is filled   
                                             
